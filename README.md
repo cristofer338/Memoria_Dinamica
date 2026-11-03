@@ -1,16 +1,16 @@
 # Comparación de Algoritmos de Búsqueda
 
 ## Descripción
-Este proyecto consiste en una aplicación de consola desarrollada en C# que implementa dos algoritmos de búsqueda: búsqueda lineal y búsqueda binaria. Ambos algoritmos permiten encontrar un número dentro de un arreglo y comparar la cantidad de operaciones que realizan.
+Este proyecto consiste en una aplicación de consola desarrollada en C# que implementa dos algoritmos de búsqueda: búsqueda lineal y búsqueda binaria. El programa compara su eficiencia mediante el número de comparaciones realizadas y el tiempo de ejecución.
 
 ## Objetivo
-Analizar y comparar la eficiencia de dos algoritmos que resuelven el mismo problema, considerando su complejidad temporal y espacial.
+Analizar y comparar dos algoritmos que resuelven el mismo problema, considerando su complejidad temporal y espacial, así como su comportamiento al trabajar con diferentes cantidades de datos.
 
 ## Tecnologías utilizadas
-- Lenguaje de programación: C#
-- Plataforma: .NET
-- Entorno de desarrollo: Visual Studio 2022
-- Tipo de aplicación: Consola
+- Lenguaje de programación: C#.
+- Plataforma: .NET.
+- Entorno de desarrollo: Visual Studio 2022.
+- Tipo de aplicación: Consola.
 
 ## Algoritmos implementados
 
@@ -29,31 +29,41 @@ Busca un elemento dividiendo repetidamente el rango de búsqueda en dos mitades.
 - Requiere que los datos estén ordenados.
 
 ## Funcionalidades
-- Solicitar la cantidad de elementos del arreglo.
-- Capturar números enteros en orden ascendente.
-- Solicitar el número que se desea buscar.
-- Ejecutar la búsqueda lineal.
-- Ejecutar la búsqueda binaria.
+- Crear arreglos ordenados automáticamente.
+- Realizar pruebas con 100, 1,000 y 10,000 elementos.
+- Buscar un número dentro del arreglo.
+- Ejecutar la búsqueda lineal y la búsqueda binaria.
+- Contabilizar las comparaciones de cada algoritmo.
+- Medir el tiempo de ejecución utilizando `Stopwatch`.
 - Mostrar la posición del elemento encontrado.
-- Contabilizar las comparaciones realizadas por cada algoritmo.
-- Informar cuando el elemento no se encuentra.
+- Mostrar la complejidad temporal y espacial de ambos algoritmos.
 
-## Ejemplo de ejecución
+## Pruebas de ejecución
+El programa realiza tres pruebas con diferentes cantidades de elementos:
 
-Arreglo:
-`[10, 20, 30, 40, 50, 60, 70, 80]`
+- Prueba 1: 100 elementos.
+- Prueba 2: 1,000 elementos.
+- Prueba 3: 10,000 elementos.
 
-Número buscado: `80`
+En cada prueba se busca el último elemento del arreglo para observar el comportamiento de los algoritmos en un escenario desfavorable para la búsqueda lineal.
 
-Resultados esperados:
-- Búsqueda lineal: 8 comparaciones.
-- Búsqueda binaria: 3 comparaciones.
+El tiempo se mide realizando 1,000 búsquedas repetidas por algoritmo.
+
+## Análisis de complejidad
+
+| Característica | Búsqueda lineal | Búsqueda binaria |
+|---|---|---|
+| Complejidad temporal | O(n) | O(log n) |
+| Complejidad espacial | O(1) | O(1) |
+| Requiere datos ordenados | No | Sí |
 
 ## Conceptos aplicados
 - Arreglos.
 - Algoritmos de búsqueda.
 - Ciclos e instrucciones condicionales.
 - Métodos.
+- Contadores de operaciones.
+- Medición del tiempo de ejecución.
 - Complejidad temporal.
 - Complejidad espacial.
 - Análisis de eficiencia algorítmica.
@@ -61,13 +71,12 @@ Resultados esperados:
 ## Ejecución del proyecto
 1. Abrir el proyecto en Visual Studio 2022.
 2. Ejecutar la aplicación.
-3. Introducir la cantidad de números.
-4. Ingresar los números en orden ascendente.
-5. Introducir el número que se desea buscar.
-6. Observar los resultados de ambos algoritmos.
+3. El programa genera automáticamente los arreglos de prueba.
+4. Se ejecutan ambos algoritmos para cada cantidad de elementos.
+5. Se muestran las comparaciones, los tiempos y las complejidades.
 
 ## Conclusión
-La búsqueda binaria presenta una mayor eficiencia temporal cuando se trabaja con datos ordenados, ya que reduce el espacio de búsqueda a la mitad en cada iteración. Por otro lado, la búsqueda lineal es más sencilla y puede utilizarse cuando los datos no están ordenados.
+La búsqueda binaria presenta una mayor eficiencia temporal cuando se trabaja con datos ordenados, ya que reduce el rango de búsqueda a la mitad en cada iteración. Por otro lado, la búsqueda lineal es más sencilla y puede utilizarse cuando los datos no están ordenados.
 
 ## Autor
 Cristofer
